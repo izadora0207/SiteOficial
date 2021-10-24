@@ -1,0 +1,48 @@
+footer{
+    
+  }
+  .fot-txt{
+    font-family: 'poppins-regular';
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fot-1{
+    font-family: 'poppins-regular';
+    background-color: rgb(223 223 223);
+    /* height: 150px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 10px;
+    flex-wrap: wrap;
+
+  }
+
+  .fot-1 h1{
+    font-size: 16px;
+    margin-bottom:18px  ;
+  }
+
+  .fot-1 div{
+    margin: 15px 15px;
+  }
+
+
+  .fot-1 li{
+    padding: 10px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .fot-1 li:hover{
+    color: #5ca3d4;
+  }
+
+  .fot-1 li svg{
+    margin-right: 5px;
+  }

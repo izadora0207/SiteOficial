@@ -1,0 +1,139 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logout{
+    padding: 12px 40px;
+    border-radius: 10px;
+    color: white;
+    background:#7BC0E3;
+    border-radius: 50px;
+}
+
+.logout a{
+    color: white;
+}
+
+.btn-submenu{
+    font-size: calc(8px + 1vmin);
+    cursor: pointer;
+    color: #333333;
+}
+
+
+li{
+    padding: 15px;
+    list-style: none;
+}
+
+header{
+    box-shadow: -3px 1px 16px 1px #e8e7e7;
+}
+
+nav{
+    font-family: 'poppins-semibold' !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10% ;
+    background-color: white;
+   
+}
+
+.dropdown-menu{
+    background: white;
+    position: absolute;
+    z-index: 2;
+    box-shadow: -4px 9px 4px 1px #a2a1a11c;
+    border-radius: 5px;
+    border: 1px solid #8080801a;
+    text-align: center;
+   
+}
+
+.dropdown-menu li{
+    padding:10px 42px;
+    font-family: 'poppins-regular';
+    font-size: calc(7px + 1vmin);
+    
+}
+.dropdown-menu li:hover{
+    background-color: rgb(197, 197, 201);
+}
+    
+.dropdown-item{
+    border-bottom: 1px solid transparent;
+ }
+
+
+ .check-l{
+    display: inline;
+}
+
+.check1{
+    font-size: 30px;
+    color: #3f51b5;
+    cursor: pointer;
+    display: none;
+    line-height: 20px;
+    
+}
+
+#check1{
+    display: none;
+}
+
+@media (max-width: 876px) {
+    .check1{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        background: white;
+        display: none;
+        top: 59px;
+        right: 0;
+        border-radius: 12px;
+        box-shadow: 5px 5px 5px 5px #adadad2b;
+        z-index: 10;
+    
+    }
+
+    .dropdown-menu {
+        position: inherit;
+        
+    }
+    .menu li.sub{
+        flex-direction: column;
+    }
+
+    nav li{
+        display: flex;
+        line-height: 30px;
+        justify-content: center;
+        border-top: 1px solid #fff;
+        padding: 20px 0;
+        z-index: 11;
+	}
+
+    header{
+        padding: 0px !important;
+    }
+    #check1:checked ~ ul.menu {
+		display: block;
+	}
+    .div-header{
+        height: 45px;
+        display: flex;
+        align-items: center;
+        padding: 0px !important;
+    }
+}

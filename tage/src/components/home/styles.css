@@ -1,0 +1,33 @@
+.txt-post{
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.txt-post-bold{
+    font-family: 'poppins-semibold';
+    margin-bottom: 10px;
+}
+
+
+ 
+.head2{
+    /* background: #C5E0B5; */
+    background: linear-gradient(
+        178.18deg, #816cde -13.56%, #1dffc3 158.3%);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'poppins-regular';
+    width: 390px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    align-items: center;
+  }
+  

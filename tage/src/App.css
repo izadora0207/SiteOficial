@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'poppins-regular';
+  src: url(../src/fonts/Poppins/Poppins-Regular.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'poppins-bold';
+  src: url(../src/fonts/Poppins/Poppins-Bold.ttf);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'poppins-semibold';
+  src: url(../src/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+    /* background: #d8d8d8; */
+    height: 5px;
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #d8d8d8;
+    border-radius: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+.none{
+    display: none;
+}
+
+h1,h2,h3{
+    font-family: 'Poppins-Bold';
+}
+
+p{
+    font-family: 'Poppins-regular';
+}
+
+button{
+    border-style: none;
+    font-family: 'poppins-semibold';
+    background: none;
+}
+
+
+.App{
+    /* //background-color: white; */
+    height: 100vh;
+    /* padding-bottom: 113px; */
+    font-size: calc(8px + 1vmin);
+    line-height: 21px;
+    color: #333333;
+}
+
+
+
+
+.container3,
+.cont,
+.container,
+.pai{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.pai{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.filho-1{
+    width: 70%;
+    height: 500px;
+    background: #FFFFFF;
+    padding: 30px 30px;
+    margin-top: 40px;
+    border-radius: 7px;
+    font-family: 'poppins-regular';
+    box-shadow:-2px 6px 8px 4px #c7c7c740;
+    
+}
+
+
+.cont{
+    /* background-color: blue; */
+    margin-top: 5%;
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
+html{
+  background: #F9FFFE;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.video iframe{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    left: 0px;
+    top: 94px;
+    overflow: hidden;
+}
+
+
+@media (max-width: 776px){
+    .video{
+        position: initial;
+    padding-top: 127.25%;
+    padding-bottom: 10px;
+    }
+    p{
+        padding: 10px !important;
+    }
+    form{
+        width: 100% !important;
+    }
+
 }

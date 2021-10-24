@@ -1,0 +1,24 @@
+
+.hr{
+background-color:#7BC0E3;
+border-color: #7BC0E3;
+}
+
+hr{
+width: 50px;
+height: 4px;
+background-color:#1DFFC3;
+border-color: #1DFFC3;
+border-style: none;
+border-radius: 7px;
+margin-top: 8px;
+}
+
+.subtxt-home,
+.txt-home{
+    font-family: 'poppins-bold';
+    border-bottom-width: 5px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* color: black; */
+}
