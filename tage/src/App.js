@@ -13,17 +13,17 @@ import Cadastro from './components/cadastro/Cadastro';
 import { useState } from 'react';
 
 function App() {
-window.watsonAssistantChatOptions = {
-    integrationID: "10de263d-c47c-4a56-811c-5d1238c45a6e", // The ID of this integration.
+  window.watsonAssistantChatOptions = {
+    integrationID: "505c030a-81c0-48e4-9e34-eb8ef2c6b045", // The ID of this integration.
     region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "d8707b15-a5f3-46e6-b3c6-c882c00662de", // The ID of your service instance.
+    serviceInstanceID: "f962365e-0869-4c8c-b887-e731faf00b0b", // The ID of your service instance.
     onLoad: function(instance) { instance.render(); }
   };
-setTimeout(function(){
-  const t=document.createElement('script');
-  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
-  document.head.appendChild(t);
-});
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
 
 
 
