@@ -197,7 +197,7 @@ export default function Academia() {
         <DivCont>
           <hr />
           <h2>Exercícios Físicos, Saúde Física e Mental durante a Pandemia</h2>
-          <div className="video">
+          <div className="video" id="video-academia">
             <iframe
               src="https://streamable.com/e/lyg0qh"
               frameborder="0"

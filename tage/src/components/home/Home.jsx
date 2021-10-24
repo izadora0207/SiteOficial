@@ -51,7 +51,7 @@ export default function Home(props) {
           <div className="card">
             <Link to="/academia">
               <div className="conteudo">
-                <Titulo2 text="Ativdade Fisica em casa" />
+                <Titulo2 text="Atividade Fisica em casa" />
                 <p>Tenha os mesmos resultados mais dentro de casa</p>
                 <button class="recipe-save" type="button">
                   <FiArrowRight />
@@ -78,17 +78,19 @@ export default function Home(props) {
         <h1>Videos mais Populares</h1>
         <p>Nossos Videos com as melhores avaliações do site.</p>
         <DivContainerHome>
-          <div className="card">
+          <div
+            className="card"
+            onClick={() =>
+              window.location.replace("./academia/#video-academia")
+            }
+          >
             <Link to="/lazer">
               <div className="conteudo">
-                <Titulo2 text="Lazer em casa" />
-                <p>
-                  Como se divertir e passar o tempo em casa como se estivesse na
-                  rua
-                </p>
+                <Titulo2 text="Dicas para lidar com a ansiedade durante a pandemia" />
+                <p>Veja dicas de como lidar com a pandemia com o lazer!</p>
                 <button class="recipe-save" type="button">
                   <FiArrowRight />
-                  Leia mais
+                  Assistir
                 </button>
               </div>
             </Link>
@@ -97,11 +99,14 @@ export default function Home(props) {
           <div className="card">
             <Link to="/academia">
               <div className="conteudo">
-                <Titulo2 text="Ativdade Fisica em casa" />
-                <p>Tenha os mesmos resultados mais dentro de casa</p>
+                <Titulo2 text="Exercícios Físicos, Saúde Física e Mental durante a Pandemia" />
+                <p>
+                  Sem academia? Assista agora esse vídeo de exercícios que você
+                  pode fazer em casa!
+                </p>
                 <button class="recipe-save" type="button">
                   <FiArrowRight />
-                  Leia mais
+                  Assistir
                 </button>
               </div>
             </Link>
@@ -109,12 +114,15 @@ export default function Home(props) {
           <div className="card">
             <Link to="/escritorio">
               <div className="conteudo">
-                <Titulo2 text="Home Office" />
+                <Titulo2 text="Dicas para trabalho em Home Office " />
 
-                <p>Dicas de como se acostumar a trabalhar de casa</p>
+                <p>
+                  Trabalhando remoto, mas não está se sentindo motivado? Assista
+                  a esse vídeo com dicas de como se acostumar ao home office
+                </p>
                 <button class="recipe-save" type="button">
                   <FiArrowRight />
-                  Leia mais
+                  Assistir
                 </button>
               </div>
             </Link>

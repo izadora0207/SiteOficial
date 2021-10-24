@@ -21,6 +21,7 @@ export const DivContainerHome = styled.div`
     transition: all 0.3s ease;
     min-width: 263px;
     border-top:5px solid #60E1CB;
+    min-height: 231px;
    }
    div.card:hover{
     -webkit-transform:scale(1.1,1.1);;
@@ -90,7 +91,7 @@ export const DivHomeH= styled.div`
     width:100%;
     background:White;
     padding:120px 0px;
-
+    text-align:center;
     h1{
         font-family:'poppins-bold';
         line-height:40px;

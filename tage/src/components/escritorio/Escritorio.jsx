@@ -6,7 +6,7 @@ export default function Escritorio() {
   return (
     <Header texto="Escritorio">
       <Artigos
-        titulo=" Home Oficce na pandemia : Artigos"
+        titulo=" Home Office na pandemia : Artigos"
         texto="Se voce esta preocupado com o trabalho e adptação dele na pandemia aqui é o seu lugar"
       >
         <DivCont>
