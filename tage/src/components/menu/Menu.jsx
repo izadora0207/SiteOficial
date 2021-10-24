@@ -23,7 +23,10 @@ export function MenuLogin() {
     <>
       <header>
         <nav>
-          <img style={{ width: "50px" }} src={logo} alt="" />
+          <Link title="Inicio" to="/">
+            <img style={{ width: "50px" }} src={logo} alt="" />
+          </Link>
+
           <input type="checkbox" id="check1" />
           <label for="check1" class="check1">
             &#9776;
